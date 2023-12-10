@@ -1,5 +1,12 @@
 name: Deploy
 
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+
 env:
   build_windows: "${{ github.workspace }}/build_windows"
   build_linux: "${{ github.workspace }}/build_linux"

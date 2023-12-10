@@ -1,10 +1,5 @@
 name: Deploy
 
-on:
-  push:
-    tags:
-      - "v*"
-
 env:
   build_windows: "${{ github.workspace }}/build_windows"
   build_linux: "${{ github.workspace }}/build_linux"
